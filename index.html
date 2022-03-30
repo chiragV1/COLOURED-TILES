@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Tiles</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="game">
+        <header>
+            <h1>Colour Tiles</h1>
+        </header>
+        <div class="scores">
+            <div class="score">
+                <h1>Moves</h1>
+                <p class='moves'>0</p>
+            </div>
+            <div class="time">
+                <h1>Time left</h1>
+                <p class="clock">2:00</p>
+            </div>
+        </div>
+        <div class="match">
+            <div class="goal">
+                <div class='s s11'></div>
+                <div class='s s12'></div>
+                <div class='s s13'></div>
+                <div class='s s21'></div>
+                <div class='s s22'></div>
+                <div class='s s23'></div>
+                <div class='s s31'></div>
+                <div class='s s32'></div>
+                <div class='s s33'></div>
+
+            </div>
+            <div class="puzzle">
+                <div class="sol_back" style="grid-area:B2/B2/D4/D4;">
+                    <h1 class="Congrats">Congrats!!!</h1>
+                    <p>Click <b>New Game</b> for another puzzle</b> 🔥</p>
+                </div>
+                <div class="t t11" style="grid-area:A1;"></div>
+                <div class="t t12" style="grid-area:A2;"></div>
+                <div class="t t13" style="grid-area:A3;"></div>
+                <div class="t t14" style="grid-area:A4;"></div>
+                <div class="t t15" style="grid-area:A5;"></div>
+                <div class="t t21" style="grid-area:B1;"></div>
+                <div class="t t22" style="grid-area:B2;"></div>
+                <div class="t t23" style="grid-area:B3"></div>
+                <div class="t t24" style="grid-area:B4;"></div>
+                <div class="t t25" style="grid-area:B5"></div>
+                <div class="t t31" style="grid-area:C1;"></div>
+                <div class="t t32" style="grid-area:C2;"></div>
+                <div class="t t33" style="grid-area:C3;"></div>
+                <div class="t t34" style="grid-area:C4;"></div>
+                <div class="t t35" style="grid-area:C5;"></div>
+                <div class="t t41" style="grid-area:D1;"></div>
+                <div class="t t42" style="grid-area:D2;"></div>
+                <div class="t t43" style="grid-area:D3;"></div>
+                <div class="t t44" style="grid-area:D4;"></div>
+                <div class="t t45" style="grid-area:D5;"></div>
+                <div class="t t51" style="grid-area:E1;"></div>
+                <div class="t t52" style="grid-area:E2;"></div>
+                <div class="t t53" style="grid-area:E3;"></div>
+                <div class="t t54" style="grid-area:E4;"></div>
+                <div class="t ttr" style="grid-area:E5;"></div>
+
+
+
+            </div>
+        </div>
+        <div class="game-start">
+            <button class="start" disabled>Start Game</button>
+            <button class="newGame">New Game</button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>

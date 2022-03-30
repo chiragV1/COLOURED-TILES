@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+  header {
+    font-size: 30px;
+    text-shadow: rgba(121, 106, 106, 0.418) 2px 2px;
+    user-select: none;
+  }
+  .game {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .scores {
+    display: flex;
+    position: relative;
+  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
+    max-width: 500px;
+    background-color: rgba(121, 106, 106, 0.418);
+    user-select: none;
+  }
+  .score,
+  .time {
+    margin: 10px;
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .game-start {
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    max-width: 500px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .start {
+    background: rgb(11, 165, 11);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: 2px solid rgb(28, 119, 28);
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .start:hover {
+    background: rgb(28, 119, 28);
+  }
+  .start:active {
+    background: rgb(13, 88, 13);
+  }
+  .stop {
+    background: rgb(199, 18, 18);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: 2px solid rgb(128, 7, 7);
+    cursor: pointer;
+    user-select: none;
+  }
+  .stop:hover {
+    background: rgb(128, 7, 7);
+  }
+  .stop:active {
+    background: rgb(100, 5, 5);
+  }
+  .newGame {
+    background: rgb(36, 114, 204);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: 2px solid rgb(26, 78, 156);
+    cursor: pointer;
+    user-select: none;
+  }
+  .newGame:hover {
+    background: rgb(26, 78, 156);
+  }
+  .newGame:active {
+    background: rgb(9, 52, 116);
+  }
+  .match {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -10px;
+  }
+  
+  .goal {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  
+    grid-gap: 2px;
+    height: 201px;
+    width: 200px;
+    background: rgb(187, 183, 183);
+    margin: 20px;
+    border: 4px solid gray;
+  }
+  
+  .s {
+    display: block;
+    background: white;
+    height: 63px;
+    width: 63px;
+    z-index: 1;
+  }
+  
+  .puzzle {
+    display: grid;
+    grid-template-areas:
+      "A1 A2 A3 A4 A5"
+      "B1 B2 B3 B4 B5"
+      "C1 C2 C3 C4 C5"
+      "D1 D2 D3 D4 D5"
+      "E1 E2 E3 E4 E5";
+    grid-gap: 2px;
+    height: 326px;
+    width: 326px;
+    background: rgb(187, 183, 183);
+    margin: 20px;
+    border: 4px solid gray;
+  }
+  .t {
+    display: block;
+    background: white;
+    height: 62px;
+    width: 62px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .ttr {
+    opacity: 0;
+  
+    cursor: auto;
+    height: 58px;
+    width: 58px;
+  }
+  .sol_back {
+    background-color: rgba(94, 88, 88, 0.418);
+    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+  }
+  
